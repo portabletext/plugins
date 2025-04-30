@@ -2,8 +2,18 @@
 
 > Official Plugins for the [Portable Text Editor](https://github.com/portabletext/editor)
 
-Available plugins:
+## Available plugins
 
-- [**One-Line Plugin**](./plugins/one-line)
+### `@portabletext/plugin-character-pair-decorator`
 
-  🤏 Restricts the Portable Text Editor to a single line
+> Automatically match a pair of characters and decorate the text in between
+
+- 💻 [`./plugins/character-pair-decorator`](./plugins/character-pair-decorator/)
+- 📦 [@portabletext/plugin-character-pair-decorator](https://www.npmjs.com/package/@portabletext/plugin-character-pair-decorator)
+
+### `@portabletext/plugin-one-line`
+
+> 🤏 Restricts the Portable Text Editor to a single line
+
+- 💻 [`./plugins/one-line`](./plugins/one-line/)
+- 📦 [@portabletext/plugin-one-line](https://www.npmjs.com/package/@portabletext/plugin-one-line)

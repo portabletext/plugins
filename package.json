@@ -1,0 +1,56 @@
+{
+  "name": "@portabletext/plugins",
+  "private": true,
+  "scripts": {
+    "build": "turbo build",
+    "check:format": "prettier . --check",
+    "check:lint": "turbo check:lint",
+    "check:react-compiler": "turbo check:react-compiler",
+    "check:types": "turbo check:types",
+    "check:types:watch": "turbo check:types:watch",
+    "clean": "turbo clean && del .turbo && del node_modules",
+    "dev": "turbo dev",
+    "dev:playground": "turbo dev --filter=playground",
+    "format": "prettier --cache --write .",
+    "format:staged": "pretty-quick --staged",
+    "postinstall": "husky",
+    "lint:fix": "turbo lint:fix",
+    "test:browser:chromium": "turbo test:browser:chromium",
+    "test:browser:chromium:watch": "turbo test:browser:chromium:watch",
+    "test:browser:firefox": "turbo test:browser:firefox",
+    "test:browser:firefox:watch": "turbo test:browser:firefox:watch",
+    "test:browser:webkit": "turbo test:browser:webkit",
+    "test:browser:webkit:watch": "turbo test:browser:webkit:watch",
+    "test:unit": "turbo test:unit",
+    "test:unit:watch": "turbo test:unit:watch"
+  },
+  "lint-staged": {
+    "*": [
+      "pnpm format:staged"
+    ]
+  },
+  "packageManager": "pnpm@10.7.1",
+  "devDependencies": {
+    "@biomejs/biome": "^1.9.4",
+    "@ianvs/prettier-plugin-sort-imports": "^4.4.1",
+    "@playwright/test": "^1.52.0",
+    "@sanity/pkg-utils": "^7.2.2",
+    "@sanity/prettier-config": "^1.0.3",
+    "@typescript-eslint/eslint-plugin": "^8.29.0",
+    "@typescript-eslint/parser": "^8.29.0",
+    "@vitest/browser": "^3.1.2",
+    "del-cli": "^6.0.0",
+    "eslint": "^8.57.1",
+    "eslint-plugin-react-compiler": "19.0.0-beta-e993439-20250328",
+    "eslint-plugin-react-hooks": "experimental",
+    "husky": "^9.1.7",
+    "prettier": "^3.5.3",
+    "prettier-plugin-gherkin": "^3.1.2",
+    "pretty-quick": "^4.1.1",
+    "racejar": "^1.2.4",
+    "turbo": "^2.5.2",
+    "typescript": "^5.8.3",
+    "vitest": "^3.1.2",
+    "vitest-browser-react": "^0.1.1"
+  }
+}

@@ -1,0 +1,72 @@
+{
+  "$schema": "https://turbo.build/schema.json",
+  "globalDependencies": [".npmrc", "biome.json", "pnpm-lock.yaml"],
+  "tasks": {
+    "build": {
+      "outputs": ["dist/**"],
+      "dependsOn": ["^build"],
+      "outputLogs": "new-only"
+    },
+    "check:lint": {
+      "outputLogs": "errors-only"
+    },
+    "check:react-compiler": {
+      "outputLogs": "errors-only"
+    },
+    "check:types": {
+      "outputs": [""],
+      "dependsOn": ["^build"],
+      "outputLogs": "errors-only"
+    },
+    "check:types:watch": {
+      "cache": false,
+      "persistent": true
+    },
+    "clean": {
+      "cache": false
+    },
+    "dev": {
+      "cache": false,
+      "persistent": true
+    },
+    "lint:fix": {
+      "outputs": [""]
+    },
+    "test:browser:chromium": {
+      "dependsOn": ["^build"],
+      "outputs": [""]
+    },
+    "test:browser:chromium:watch": {
+      "dependsOn": ["^build"],
+      "persistent": true,
+      "cache": false
+    },
+    "test:browser:firefox": {
+      "dependsOn": ["^build"],
+      "outputs": [""]
+    },
+    "test:browser:firefox:watch": {
+      "dependsOn": ["^build"],
+      "persistent": true,
+      "cache": false
+    },
+    "test:browser:webkit": {
+      "dependsOn": ["^build"],
+      "outputs": [""]
+    },
+    "test:browser:webkit:watch": {
+      "dependsOn": ["^build"],
+      "persistent": true,
+      "cache": false
+    },
+    "test:unit": {
+      "dependsOn": ["^build"],
+      "outputs": [""]
+    },
+    "test:unit:watch": {
+      "dependsOn": ["^build"],
+      "persistent": true,
+      "cache": false
+    }
+  }
+}

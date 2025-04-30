@@ -1,0 +1,6 @@
+.turbo
+__screenshots__
+dist
+node_modules
+
+.eslintcache

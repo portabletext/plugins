@@ -17,6 +17,13 @@
       "semanticCommitType": "fix"
     },
     {
+      "matchFileNames": ["plugins/**/*"],
+      "matchDepTypes": ["devDependencies"],
+      "matchPackageNames": ["@portabletext/editor", "react"],
+      "rangeStrategy": "bump",
+      "semanticCommitType": "fix"
+    },
+    {
       "description": "Ensure internal and important packages open a PRs right away, without waiting for manual approval",
       "matchPackageNames": [
         "@portabletext/*",

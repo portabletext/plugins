@@ -5,6 +5,8 @@
   "always-link-local": true,
   "plugins": ["node-workspace"],
   "packages": {
-    "plugins/one-line": {}
+    "plugins/one-line": {
+      "release-type": "node"
+    }
   }
 }

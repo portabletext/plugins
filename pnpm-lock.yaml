@@ -79,7 +79,7 @@ importers:
     dependencies:
       '@portabletext/editor':
         specifier: ^1.48.2
-        version: 1.48.3(@sanity/schema@3.87.0(@types/react@19.1.2))(@sanity/types@3.87.0(@types/react@19.1.2))(@types/react@19.1.2)(react-dom@19.1.0(react@19.1.0))(react@19.1.0)(rxjs@7.8.2)
+        version: 1.48.4(@sanity/schema@3.87.0(@types/react@19.1.2))(@sanity/types@3.87.0(@types/react@19.1.2))(@types/react@19.1.2)(react-dom@19.1.0(react@19.1.0))(react@19.1.0)(rxjs@7.8.2)
       '@portabletext/plugin-one-line':
         specifier: workspace:^
         version: link:../../plugins/one-line
@@ -115,8 +115,8 @@ importers:
   plugins/one-line:
     devDependencies:
       '@portabletext/editor':
-        specifier: ^1.48.3
-        version: 1.48.3(@sanity/schema@3.87.0(@types/react@19.1.2))(@sanity/types@3.87.0(@types/react@19.1.2))(@types/react@19.1.2)(react-dom@19.1.0(react@19.1.0))(react@19.1.0)(rxjs@7.8.2)
+        specifier: ^1.48.4
+        version: 1.48.4(@sanity/schema@3.87.0(@types/react@19.1.2))(@sanity/types@3.87.0(@types/react@19.1.2))(@types/react@19.1.2)(react-dom@19.1.0(react@19.1.0))(react@19.1.0)(rxjs@7.8.2)
       '@types/react':
         specifier: ^19.1.2
         version: 19.1.2
@@ -744,8 +744,8 @@ packages:
       '@sanity/types': ^3.87.0
       '@types/react': 18 || 19
 
-  '@portabletext/editor@1.48.3':
-    resolution: {integrity: sha512-A9AYPgShHwyoNE6Ug7xu+EZBKOzPXwDl6a9l0tlPPQxseG0gqkKZuLqUXiIcvTkkcN8uLepb8pkccBlSfK4VvQ==}
+  '@portabletext/editor@1.48.4':
+    resolution: {integrity: sha512-g7e7pcz/U217gGWvnRN3VUn06vpkE5hMZ7HVkuPtEwLtmcTSL7JiMbgQ0gGvKHv0oBcwZH+OlF88qAO6uj4FjA==}
     engines: {node: '>=18'}
     peerDependencies:
       '@sanity/schema': ^3.87.0
@@ -2431,8 +2431,8 @@ packages:
     resolution: {integrity: sha512-y3bGgqKj3QBdxLbLkomlohkvsA8gdAiUQlSBJnBhfn+BPxg4bc62d8TcBW15wavDfgexCgccckhcZvywyQYPOw==}
     hasBin: true
 
-  react-compiler-runtime@19.0.0-beta-e993439-20250328:
-    resolution: {integrity: sha512-bdLTxDSnjHb8iwkAal+vNb1NK1l7MlsG02/Kc47AkQL0lmszOHRSV5wkeprCVnT2pYAI8721TOeO6e1/Wfgvuw==}
+  react-compiler-runtime@19.1.0-rc.1:
+    resolution: {integrity: sha512-wCt6g+cRh8g32QT18/9blfQHywGjYu+4FlEc3CW1mx3pPxYzZZl1y+VtqxRgnKKBCFLIGUYxog4j4rs5YS86hw==}
     peerDependencies:
       react: ^17.0.0 || ^18.0.0 || ^19.0.0 || ^0.0.0-experimental
 
@@ -3721,7 +3721,7 @@ snapshots:
       get-random-values-esm: 1.0.2
       lodash: 4.17.21
 
-  '@portabletext/editor@1.48.3(@sanity/schema@3.87.0(@types/react@19.1.2))(@sanity/types@3.87.0(@types/react@19.1.2))(@types/react@19.1.2)(react-dom@19.1.0(react@19.1.0))(react@19.1.0)(rxjs@7.8.2)':
+  '@portabletext/editor@1.48.4(@sanity/schema@3.87.0(@types/react@19.1.2))(@sanity/types@3.87.0(@types/react@19.1.2))(@types/react@19.1.2)(react-dom@19.1.0(react@19.1.0))(react@19.1.0)(rxjs@7.8.2)':
     dependencies:
       '@portabletext/block-tools': 1.1.22(@sanity/types@3.87.0(@types/react@19.1.2))(@types/react@19.1.2)
       '@portabletext/patches': 1.1.3
@@ -3734,7 +3734,7 @@ snapshots:
       lodash: 4.17.21
       lodash.startcase: 4.4.0
       react: 19.1.0
-      react-compiler-runtime: 19.0.0-beta-e993439-20250328(react@19.1.0)
+      react-compiler-runtime: 19.1.0-rc.1(react@19.1.0)
       rxjs: 7.8.2
       slate: 0.114.0
       slate-dom: 0.114.0(slate@0.114.0)
@@ -5513,7 +5513,7 @@ snapshots:
       minimist: 1.2.8
       strip-json-comments: 2.0.1
 
-  react-compiler-runtime@19.0.0-beta-e993439-20250328(react@19.1.0):
+  react-compiler-runtime@19.1.0-rc.1(react@19.1.0):
     dependencies:
       react: 19.1.0
 

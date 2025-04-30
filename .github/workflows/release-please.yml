@@ -14,9 +14,7 @@ on:
         type: boolean
 
 permissions:
-  contents: write
-  issues: write
-  pull-requests: write
+  contents: read # for checkout
 
 jobs:
   release-please:
@@ -24,9 +22,7 @@ jobs:
       TURBO_TOKEN: ${{ secrets.TURBO_TOKEN }}
       TURBO_TEAM: ${{ vars.TURBO_TEAM }}
     permissions:
-      contents: write
-      issues: write
-      pull-requests: write
+      contents: read # for checkout
       id-token: write # to enable use of OIDC for npm provenance
     runs-on: ubuntu-latest
     steps:

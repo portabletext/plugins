@@ -11,6 +11,10 @@ export default defineConfig({
   ],
   resolve: {
     alias: {
+      '@portabletext/plugin-character-pair-decorator': path.resolve(
+        __dirname,
+        '../../plugins/character-pair-decorator/src',
+      ),
       '@portabletext/plugin-one-line': path.resolve(
         __dirname,
         '../../plugins/one-line/src',

@@ -16,6 +16,7 @@
   },
   "dependencies": {
     "@portabletext/editor": "^1.48.2",
+    "@portabletext/plugin-character-pair-decorator": "workspace:^",
     "@portabletext/plugin-one-line": "workspace:^",
     "@xstate/store": "^3.5.1",
     "react": "^19.0.0",

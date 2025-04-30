@@ -1,0 +1,44 @@
+name: Unit tests
+
+on:
+  # Build on pushes branches that have a PR (including drafts)
+  pull_request:
+  # Build on commits pushed to branches without a PR if it's in the allowlist
+  push:
+    branches: [main]
+
+jobs:
+  test:
+    timeout-minutes: 60
+    name: Unit tests (node ${{ matrix.node }})
+    runs-on: ${{ matrix.os }}
+    continue-on-error: ${{ matrix.experimental }}
+    env:
+      TURBO_TOKEN: ${{ secrets.TURBO_TOKEN }}
+      TURBO_TEAM: ${{ vars.TURBO_TEAM }}
+
+    strategy:
+      # we want to know if a test fails on a specific node version
+      fail-fast: false
+      matrix:
+        os: [ubuntu-latest]
+        node: [lts/*]
+        experimental: [false]
+
+    steps:
+      - uses: actions/checkout@v4
+      - uses: pnpm/action-setup@v4
+      - uses: actions/setup-node@v4
+        with:
+          cache: pnpm
+          node-version: ${{ matrix.node }}
+
+      - name: Install project dependencies
+        run: pnpm install
+
+      - name: Test
+        id: test
+        run: |
+          node -v
+          pnpm -v
+          pnpm test:unit

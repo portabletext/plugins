@@ -1,0 +1,32 @@
+{
+  "name": "playground",
+  "version": "0.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "tsc -b && vite build",
+    "check:lint": "biome lint .",
+    "check:types": "tsc --build --noEmit --pretty",
+    "check:types:watch": "tsc --watch",
+    "check:react-compiler": "eslint --cache --no-inline-config --no-eslintrc --ext .cjs,.mjs,.js,.jsx,.ts,.tsx --parser @typescript-eslint/parser --plugin react-compiler --plugin react-hooks --rule 'react-compiler/react-compiler: [warn]' --rule 'react-hooks/rules-of-hooks: [error]' --rule 'react-hooks/exhaustive-deps: [error]' src",
+    "clean": "del .turbo && del dist && del node_modules",
+    "dev": "vite",
+    "lint:fix": "biome lint --write .",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "@portabletext/editor": "^1.48.2",
+    "@portabletext/plugin-one-line": "workspace:^",
+    "@xstate/store": "^3.5.1",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0"
+  },
+  "devDependencies": {
+    "@types/react": "^19.0.10",
+    "@types/react-dom": "^19.0.4",
+    "@vitejs/plugin-react": "^4.4.1",
+    "babel-plugin-react-compiler": "19.0.0-beta-e993439-20250328",
+    "globals": "^16.0.0",
+    "vite": "^6.3.1"
+  }
+}

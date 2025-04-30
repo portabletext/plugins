@@ -1,0 +1,49 @@
+{
+  "$schema": "https://biomejs.dev/schemas/1.8.3/schema.json",
+  "formatter": {
+    "enabled": false
+  },
+  "linter": {
+    "ignore": ["tsconfig.*.json", "coverage", "dist"],
+    "enabled": true,
+    "rules": {
+      "recommended": true,
+      "a11y": {
+        "useKeyWithClickEvents": "off"
+      },
+      "complexity": {
+        "noForEach": "off",
+        "noUselessFragments": "off",
+        "useOptionalChain": "off"
+      },
+      "correctness": {
+        "useExhaustiveDependencies": "off",
+        "noVoidTypeReturn": "off",
+        "noUnusedImports": "error",
+        "noUnusedVariables": "error"
+      },
+      "performance": {
+        "noAccumulatingSpread": "off",
+        "noDelete": "off"
+      },
+      "security": {
+        "noDangerouslySetInnerHtml": "off"
+      },
+      "suspicious": {
+        "noConfusingVoidType": "off",
+        "noExplicitAny": "off",
+        "noConsoleLog": "error",
+        "noPrototypeBuiltins": "off",
+        "useAwait": "error"
+      },
+      "style": {
+        "noNonNullAssertion": "off",
+        "noUnusedTemplateLiteral": "off",
+        "noUselessElse": "off"
+      }
+    }
+  },
+  "organizeImports": {
+    "enabled": false
+  }
+}

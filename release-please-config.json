@@ -1,6 +1,6 @@
 {
   "$schema": "https://raw.githubusercontent.com/googleapis/release-please/main/schemas/config.json",
-  "last-release-sha": "64be810f410fbbc31d015f72708ae152d40184e0",
+  "last-release-sha": "a674c91dd7cc1d15344a0097351dd744412a1016",
   "bump-minor-pre-major": true,
   "always-link-local": true,
   "plugins": ["node-workspace"],

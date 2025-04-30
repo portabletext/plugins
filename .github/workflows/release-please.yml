@@ -15,7 +15,6 @@ on:
 
 permissions:
   contents: read # for checkout
-  issues: write
 
 jobs:
   release-please:

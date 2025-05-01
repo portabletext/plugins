@@ -83,6 +83,9 @@ importers:
       '@portabletext/plugin-character-pair-decorator':
         specifier: workspace:^
         version: link:../../plugins/character-pair-decorator
+      '@portabletext/plugin-markdown-shortcuts':
+        specifier: workspace:^
+        version: link:../../plugins/markdown-shortcuts
       '@portabletext/plugin-one-line':
         specifier: workspace:^
         version: link:../../plugins/one-line
@@ -126,6 +129,22 @@ importers:
       xstate:
         specifier: ^5.19.2
         version: 5.19.2
+    devDependencies:
+      '@portabletext/editor':
+        specifier: ^1.48.4
+        version: 1.48.4(@sanity/schema@3.87.0(@types/react@19.1.2))(@sanity/types@3.87.0(@types/react@19.1.2))(@types/react@19.1.2)(react-dom@19.1.0(react@19.1.0))(react@19.1.0)(rxjs@7.8.2)
+      '@types/react':
+        specifier: ^19.1.2
+        version: 19.1.2
+      react:
+        specifier: ^19.1.0
+        version: 19.1.0
+
+  plugins/markdown-shortcuts:
+    dependencies:
+      '@portabletext/plugin-character-pair-decorator':
+        specifier: workspace:^
+        version: link:../character-pair-decorator
     devDependencies:
       '@portabletext/editor':
         specifier: ^1.48.4

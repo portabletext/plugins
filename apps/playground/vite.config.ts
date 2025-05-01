@@ -15,6 +15,10 @@ export default defineConfig({
         __dirname,
         '../../plugins/character-pair-decorator/src',
       ),
+      '@portabletext/plugin-markdown-shortcuts': path.resolve(
+        __dirname,
+        '../../plugins/markdown-shortcuts/src',
+      ),
       '@portabletext/plugin-one-line': path.resolve(
         __dirname,
         '../../plugins/one-line/src',

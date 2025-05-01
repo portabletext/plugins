@@ -1,5 +1,17 @@
 # Changelog
 
+## [1.1.0](https://github.com/portabletext/plugins/compare/plugin-character-pair-decorator-v1.0.0...plugin-character-pair-decorator-v1.1.0) (2025-05-01)
+
+
+### Features
+
+* introduce @portabletext/plugin-markdown-shortcuts ([301dead](https://github.com/portabletext/plugins/commit/301deadd590c02199530ea4fee766a2467d9eb3a))
+
+
+### Bug Fixes
+
+* **deps:** update dependency @portabletext/editor to ^1.48.4 ([9839a60](https://github.com/portabletext/plugins/commit/9839a60d6ba33975a2047bb4c2e6e3fff18dec24))
+
 ## 1.0.0 (2025-04-30)
 
 

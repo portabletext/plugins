@@ -50,7 +50,7 @@
     "prepublishOnly": "turbo run build"
   },
   "devDependencies": {
-    "@portabletext/editor": "^1.48.5",
+    "@portabletext/editor": "^1.48.8",
     "@types/react": "^19.1.2",
     "react": "^19.1.0"
   },

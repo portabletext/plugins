@@ -1,6 +1,6 @@
 # `@portabletext/plugin-character-pair-decorator`
 
-> Automatically match a pair of characters and decorate the text in between
+> ✨ Automatically match a pair of characters and decorate the text in between
 
 Import the `CharacterPairDecoratorPlugin` React component and place it inside the `EditorProvider` to automatically register the necessary Behaviors:
 

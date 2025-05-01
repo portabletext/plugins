@@ -16,7 +16,7 @@
 > ⬇️ Adds helpful Markdown shortcuts to the editor
 
 - 💻 [`./plugins/markdown-shortcuts`](./plugins/markdown-shortcuts/)
-- 📦 [@portabletext/plugin-markdown-shortcuts](https://www.npmjs.com/package/@portabletext/plugin-markdwon-shortcuts)
+- 📦 [@portabletext/plugin-markdown-shortcuts](https://www.npmjs.com/package/@portabletext/plugin-markdown-shortcuts)
 
 ### `@portabletext/plugin-one-line`
 

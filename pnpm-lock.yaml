@@ -79,7 +79,7 @@ importers:
     dependencies:
       '@portabletext/editor':
         specifier: ^1.48.8
-        version: 1.48.9(@sanity/schema@3.87.0(@types/react@19.1.2))(@sanity/types@3.87.0(@types/react@19.1.2))(@types/react@19.1.2)(react-dom@19.1.0(react@19.1.0))(react@19.1.0)(rxjs@7.8.2)
+        version: 1.48.11(@sanity/schema@3.87.0(@types/react@19.1.2))(@sanity/types@3.87.0(@types/react@19.1.2))(@types/react@19.1.2)(react-dom@19.1.0(react@19.1.0))(react@19.1.0)(rxjs@7.8.2)
       '@portabletext/plugin-character-pair-decorator':
         specifier: workspace:^
         version: link:../../plugins/character-pair-decorator
@@ -131,8 +131,8 @@ importers:
         version: 5.19.2
     devDependencies:
       '@portabletext/editor':
-        specifier: ^1.48.9
-        version: 1.48.9(@sanity/schema@3.87.0(@types/react@19.1.2))(@sanity/types@3.87.0(@types/react@19.1.2))(@types/react@19.1.2)(react-dom@19.1.0(react@19.1.0))(react@19.1.0)(rxjs@7.8.2)
+        specifier: ^1.48.11
+        version: 1.48.11(@sanity/schema@3.87.0(@types/react@19.1.2))(@sanity/types@3.87.0(@types/react@19.1.2))(@types/react@19.1.2)(react-dom@19.1.0(react@19.1.0))(react@19.1.0)(rxjs@7.8.2)
       '@types/react':
         specifier: ^19.1.2
         version: 19.1.2
@@ -147,8 +147,8 @@ importers:
         version: link:../character-pair-decorator
     devDependencies:
       '@portabletext/editor':
-        specifier: ^1.48.9
-        version: 1.48.9(@sanity/schema@3.87.0(@types/react@19.1.2))(@sanity/types@3.87.0(@types/react@19.1.2))(@types/react@19.1.2)(react-dom@19.1.0(react@19.1.0))(react@19.1.0)(rxjs@7.8.2)
+        specifier: ^1.48.11
+        version: 1.48.11(@sanity/schema@3.87.0(@types/react@19.1.2))(@sanity/types@3.87.0(@types/react@19.1.2))(@types/react@19.1.2)(react-dom@19.1.0(react@19.1.0))(react@19.1.0)(rxjs@7.8.2)
       '@types/react':
         specifier: ^19.1.2
         version: 19.1.2
@@ -159,8 +159,8 @@ importers:
   plugins/one-line:
     devDependencies:
       '@portabletext/editor':
-        specifier: ^1.48.9
-        version: 1.48.9(@sanity/schema@3.87.0(@types/react@19.1.2))(@sanity/types@3.87.0(@types/react@19.1.2))(@types/react@19.1.2)(react-dom@19.1.0(react@19.1.0))(react@19.1.0)(rxjs@7.8.2)
+        specifier: ^1.48.11
+        version: 1.48.11(@sanity/schema@3.87.0(@types/react@19.1.2))(@sanity/types@3.87.0(@types/react@19.1.2))(@types/react@19.1.2)(react-dom@19.1.0(react@19.1.0))(react@19.1.0)(rxjs@7.8.2)
       '@types/react':
         specifier: ^19.1.2
         version: 19.1.2
@@ -788,8 +788,8 @@ packages:
       '@sanity/types': ^3.87.0
       '@types/react': 18 || 19
 
-  '@portabletext/editor@1.48.9':
-    resolution: {integrity: sha512-iWubFETD3ntgbzeS0D0EBI5tO8ADRO+6YXZ+wH8Blony56f7Ixu3QbbS7Lngr0GPCLJaNTz/8a/BF2od+hPdMA==}
+  '@portabletext/editor@1.48.11':
+    resolution: {integrity: sha512-2qPHDk4F3z82ergkgHXcorCg24IS6yJ0Hiy3bKaO9Ty6dKbNPKit1XwbchIA9ie9q8hNcV14J0JoYqTrOvIDLw==}
     engines: {node: '>=18'}
     peerDependencies:
       '@sanity/schema': ^3.87.0
@@ -3772,7 +3772,7 @@ snapshots:
       get-random-values-esm: 1.0.2
       lodash: 4.17.21
 
-  '@portabletext/editor@1.48.9(@sanity/schema@3.87.0(@types/react@19.1.2))(@sanity/types@3.87.0(@types/react@19.1.2))(@types/react@19.1.2)(react-dom@19.1.0(react@19.1.0))(react@19.1.0)(rxjs@7.8.2)':
+  '@portabletext/editor@1.48.11(@sanity/schema@3.87.0(@types/react@19.1.2))(@sanity/types@3.87.0(@types/react@19.1.2))(@types/react@19.1.2)(react-dom@19.1.0(react@19.1.0))(react@19.1.0)(rxjs@7.8.2)':
     dependencies:
       '@portabletext/block-tools': 1.1.22(@sanity/types@3.87.0(@types/react@19.1.2))(@types/react@19.1.2)
       '@portabletext/patches': 1.1.3

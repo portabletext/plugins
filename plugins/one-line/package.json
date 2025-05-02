@@ -49,12 +49,12 @@
     "prepublishOnly": "turbo run build"
   },
   "devDependencies": {
-    "@portabletext/editor": "^1.48.9",
+    "@portabletext/editor": "^1.48.11",
     "@types/react": "^19.1.2",
     "react": "^19.1.0"
   },
   "peerDependencies": {
-    "@portabletext/editor": "^1.48.9",
+    "@portabletext/editor": "^1.48.11",
     "react": "^19.1.0"
   }
 }

@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.0.9](https://github.com/portabletext/plugins/compare/plugin-one-line-v1.0.8...plugin-one-line-v1.0.9) (2025-05-05)
+
+
+### Bug Fixes
+
+* **deps:** update dependency @portabletext/editor to ^1.48.15 ([011ed21](https://github.com/portabletext/plugins/commit/011ed21c5e16141543544f612c8c1df797d51014))
+
 ## [1.0.8](https://github.com/portabletext/plugins/compare/plugin-one-line-v1.0.7...plugin-one-line-v1.0.8) (2025-05-03)
 
 

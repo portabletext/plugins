@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.0.13](https://github.com/portabletext/plugins/compare/plugin-character-pair-decorator-v1.0.12...plugin-character-pair-decorator-v1.0.13) (2025-06-23)
+
+
+### Bug Fixes
+
+* **deps:** update dependency @portabletext/editor to ^1.55.0 ([da3e8dd](https://github.com/portabletext/plugins/commit/da3e8ddbe4c620d53e52c91b4903d9709a8f04e3))
+
 ## [1.0.12](https://github.com/portabletext/plugins/compare/plugin-character-pair-decorator-v1.0.11...plugin-character-pair-decorator-v1.0.12) (2025-06-19)
 
 

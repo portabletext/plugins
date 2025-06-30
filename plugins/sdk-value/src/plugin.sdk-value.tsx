@@ -3,9 +3,9 @@ import {
   type PortableTextBlock,
   type Patch as PtePatch,
 } from '@portabletext/editor'
-import {
-  type JSONValue,
-  type InsertPatch as PteInsertPatch,
+import type {
+  JSONValue,
+  InsertPatch as PteInsertPatch,
 } from '@portabletext/patches'
 import {diffValue, type SanityPatchOperations} from '@sanity/diff-patch'
 import {jsonMatch} from '@sanity/json-match'

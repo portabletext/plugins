@@ -5,10 +5,18 @@ import {
 } from '@portabletext/editor'
 import type {
   JSONValue,
+  Path,
+  PathSegment,
   InsertPatch as PteInsertPatch,
 } from '@portabletext/patches'
 import {diffValue, type SanityPatchOperations} from '@sanity/diff-patch'
-import {jsonMatch} from '@sanity/json-match'
+import {
+  parsePath,
+  type ExprNode,
+  type PathNode,
+  type SegmentNode,
+  type ThisNode,
+} from '@sanity/json-match'
 import {
   getDocumentState,
   useEditDocument,
@@ -23,11 +31,49 @@ interface SDKValuePluginProps extends DocumentHandle {
 
 type InsertPatch = Required<Pick<SanityPatchOperations, 'insert'>>
 
-function createPtePatches(
-  snapshot: PortableTextBlock[],
-  target: PortableTextBlock[] | null | undefined,
-): PtePatch[] {
-  return diffValue(snapshot, target).flatMap((p) => {
+const ARRAYIFY_ERROR_MESSAGE =
+  'Unexpected path format from diffValue output. Please report this issue.'
+
+function* getSegments(
+  node: PathNode,
+): Generator<Exclude<SegmentNode, ThisNode>> {
+  if (node.base) yield* getSegments(node.base)
+  if (node.segment.type !== 'This') yield node.segment
+}
+
+function isKeyPath(node: ExprNode): node is PathNode {
+  if (node.type !== 'Path') return false
+  if (node.base) return false
+  if (node.recursive) return false
+  if (node.segment.type !== 'Identifier') return false
+  return node.segment.name === '_key'
+}
+
+function arrayifyPath(pathExpr: string): Path {
+  const node = parsePath(pathExpr)
+  if (!node) return []
+  if (node.type !== 'Path') throw new Error(ARRAYIFY_ERROR_MESSAGE)
+
+  return Array.from(getSegments(node)).map((segment): PathSegment => {
+    if (segment.type === 'Identifier') return segment.name
+    if (segment.type !== 'Subscript') throw new Error(ARRAYIFY_ERROR_MESSAGE)
+    if (segment.elements.length !== 1) throw new Error(ARRAYIFY_ERROR_MESSAGE)
+
+    const [element] = segment.elements
+    if (element.type === 'Number') return element.value
+
+    if (element.type !== 'Comparison') throw new Error(ARRAYIFY_ERROR_MESSAGE)
+    if (element.operator !== '==') throw new Error(ARRAYIFY_ERROR_MESSAGE)
+    const keyPathNode = [element.left, element.right].find(isKeyPath)
+    if (!keyPathNode) throw new Error(ARRAYIFY_ERROR_MESSAGE)
+    const other = element.left === keyPathNode ? element.right : element.left
+    if (other.type !== 'String') throw new Error(ARRAYIFY_ERROR_MESSAGE)
+    return {_key: other.value}
+  })
+}
+
+function convertPatches(patches: SanityPatchOperations[]): PtePatch[] {
+  return patches.flatMap((p) => {
     return Object.entries(p).flatMap(([type, values]): PtePatch[] => {
       const origin = 'remote'
 
@@ -37,21 +83,14 @@ function createPtePatches(
         case 'diffMatchPatch':
         case 'inc':
         case 'dec': {
-          return Object.entries(values).flatMap(([pathExpr, value]) =>
-            Array.from(jsonMatch(target, pathExpr)).map(
-              ({path}) => ({type, origin, path, value}) as PtePatch,
-            ),
+          return Object.entries(values).map(
+            ([pathExpr, value]) =>
+              ({type, value, origin, path: arrayifyPath(pathExpr)}) as PtePatch,
           )
         }
         case 'unset': {
           if (!Array.isArray(values)) return []
-          return values.flatMap((pathExpr) =>
-            Array.from(jsonMatch(target, pathExpr)).map(({path}) => ({
-              type,
-              origin,
-              path,
-            })),
-          )
+          return values.map(arrayifyPath).map((path) => ({type, origin, path}))
         }
         case 'insert': {
           const {items, ...rest} = values as InsertPatch['insert']
@@ -60,16 +99,15 @@ function createPtePatches(
 
           if (!position) return []
           const pathExpr = (rest as {[K in InsertPosition]: string})[position]
+          const insertPatch: PteInsertPatch = {
+            type,
+            origin,
+            position,
+            path: arrayifyPath(pathExpr),
+            items: items as JSONValue[],
+          }
 
-          return Array.from(jsonMatch(target, pathExpr)).map(
-            ({path}): PteInsertPatch => ({
-              type,
-              origin,
-              position,
-              path,
-              items: items as JSONValue[],
-            }),
-          )
+          return [insertPatch]
         }
 
         default: {
@@ -83,7 +121,7 @@ function createPtePatches(
  * @public
  */
 export function SDKValuePlugin(props: SDKValuePluginProps) {
-  // `useEditDocument` suspends until the document is loaded into the SDK store
+  // NOTE: the real `useEditDocument` suspends until the document is loaded into the SDK store
   const setSdkValue = useEditDocument(props)
   const instance = useSanityInstance(props)
   const editor = useEditor()
@@ -99,7 +137,7 @@ export function SDKValuePlugin(props: SDKValuePluginProps) {
     const unsubscribeToEditorChanges = () => editorSubscription.unsubscribe()
     const unsubscribeToSdkChanges = onSdkValueChange(() => {
       const snapshot = getEditorValue()
-      const patches = createPtePatches(snapshot, getSdkValue())
+      const patches = convertPatches(diffValue(snapshot, getSdkValue()))
 
       if (patches.length) {
         editor.send({type: 'patches', patches, snapshot})

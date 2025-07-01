@@ -1,5 +1,19 @@
 # Changelog
 
+## [1.0.13](https://github.com/portabletext/plugins/compare/plugin-markdown-shortcuts-v1.0.12...plugin-markdown-shortcuts-v1.0.13) (2025-07-01)
+
+
+### Bug Fixes
+
+* **deps:** update dependency @portabletext/editor to ^1.55.11 ([aa47a1e](https://github.com/portabletext/plugins/commit/aa47a1eb87956780825b2be36d2d26dd3db68f17))
+
+
+### Dependencies
+
+* The following workspace dependencies were updated
+  * dependencies
+    * @portabletext/plugin-character-pair-decorator bumped to 1.0.14
+
 ## [1.0.12](https://github.com/portabletext/plugins/compare/plugin-markdown-shortcuts-v1.0.11...plugin-markdown-shortcuts-v1.0.12) (2025-06-23)
 
 

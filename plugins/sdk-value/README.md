@@ -55,5 +55,4 @@ The `SDKValuePlugin` component accepts a [Document Handle](https://www.sanity.io
 This plugin requires:
 
 - `@sanity/sdk-react` for document state management
-- A configured Sanity client instance
 - The document must exist in the Sanity dataset

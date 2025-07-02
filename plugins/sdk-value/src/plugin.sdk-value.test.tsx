@@ -159,14 +159,12 @@ describe(SDKValuePlugin.name, () => {
     await user.click(portableTextEditable)
     await user.type(portableTextEditable, 'Hello world!')
 
-    expect(getEditorValue()).toEqual(getSdkValue())
+    expect(getSdkValue()).toEqual(getEditorValue())
     expect(getSdkValue()).toMatchObject([{children: [{text: 'Hello world!'}]}])
   })
 
   it('syncs SDK changes to the editor', async () => {
     const testValue: PortableTextBlock[] = [
-      // // Uncommenting this fixes the test for now
-      // ...(getEditorValue() ?? []),
       {
         _type: 'block',
         _key: 'test-key',

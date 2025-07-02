@@ -27,7 +27,7 @@
 
 ### `@portabletext/plugin-sdk-value`
 
-> 🔗 Connects a Portable Text Editor field with a Sanity document using the SDK
+> 🔗 Connects a Portable Text Editor with a Sanity document using the SDK
 
 - 💻 [`./plugins/sdk-value`](./plugins/sdk-value/)
 - 📦 [@portabletext/plugin-sdk-value](https://www.npmjs.com/package/@portabletext/plugin-sdk-value)

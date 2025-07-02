@@ -10,6 +10,7 @@
   "packages": {
     "plugins/character-pair-decorator": {},
     "plugins/markdown-shortcuts": {},
-    "plugins/one-line": {}
+    "plugins/one-line": {},
+    "plugins/sdk-value": {}
   }
 }

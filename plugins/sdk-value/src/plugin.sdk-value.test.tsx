@@ -163,7 +163,7 @@ describe(SDKValuePlugin.name, () => {
     expect(getSdkValue()).toMatchObject([{children: [{text: 'Hello world!'}]}])
   })
 
-  it('syncs SDK changes to the editor', async () => {
+  it('syncs SDK changes to the editor', () => {
     const testValue: PortableTextBlock[] = [
       {
         _type: 'block',

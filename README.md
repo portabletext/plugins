@@ -24,3 +24,10 @@
 
 - 💻 [`./plugins/one-line`](./plugins/one-line/)
 - 📦 [@portabletext/plugin-one-line](https://www.npmjs.com/package/@portabletext/plugin-one-line)
+
+### `@portabletext/plugin-sdk-value`
+
+> 🔗 Connects a Portable Text Editor field with a Sanity document using the SDK
+
+- 💻 [`./plugins/sdk-value`](./plugins/sdk-value/)
+- 📦 [@portabletext/plugin-sdk-value](https://www.npmjs.com/package/@portabletext/plugin-sdk-value)

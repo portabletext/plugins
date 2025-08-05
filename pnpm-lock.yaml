@@ -60,8 +60,8 @@ importers:
         specifier: ^4.1.1
         version: 4.1.1(prettier@3.5.3)
       racejar:
-        specifier: ^1.2.9
-        version: 1.2.9(@jest/globals@29.7.0)(@playwright/test@1.52.0)(vitest@3.1.2)
+        specifier: ^1.2.12
+        version: 1.2.12(@jest/globals@29.7.0)(@playwright/test@1.52.0)(vitest@3.1.2)
       turbo:
         specifier: ^2.5.2
         version: 2.5.2
@@ -2706,11 +2706,11 @@ packages:
   queue-microtask@1.2.3:
     resolution: {integrity: sha512-NuaNSa6flKT5JaSYQzJok04JzTL1CA6aGhv5rfLW3PgqA+M2ChpZQnAC8h8i4ZFkBS8X5RqkDBHA7r4hej3K9A==}
 
-  racejar@1.2.9:
-    resolution: {integrity: sha512-z/MzPdGPZgoD/EPmZOyFkMNaKZ5yhyRWPw9rI7u8iSkgyWPXbO23Ta2LjBDkTNdMTCBCqvFeVPie6vliOnbMAg==}
+  racejar@1.2.12:
+    resolution: {integrity: sha512-v7p34IgUBCn901dZ0yc3L/n1luYkIbExnDMaKxkhepEV4RlTzNwCGoLKyz/iCNrMYHXrssdkTGUmmgNsMkWMlQ==}
     peerDependencies:
-      '@jest/globals': ^30.0.3
-      '@playwright/test': ^1.53.1
+      '@jest/globals': ^30.0.5
+      '@playwright/test': ^1.54.2
       vitest: ^3.2.4
 
   randombytes@2.1.0:
@@ -6051,7 +6051,7 @@ snapshots:
 
   queue-microtask@1.2.3: {}
 
-  racejar@1.2.9(@jest/globals@29.7.0)(@playwright/test@1.52.0)(vitest@3.1.2):
+  racejar@1.2.12(@jest/globals@29.7.0)(@playwright/test@1.52.0)(vitest@3.1.2):
     dependencies:
       '@jest/globals': 29.7.0
       '@playwright/test': 1.52.0

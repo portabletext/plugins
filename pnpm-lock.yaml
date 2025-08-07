@@ -43,7 +43,7 @@ importers:
         version: 19.0.0-beta-e993439-20250328(eslint@8.57.1)
       eslint-plugin-react-hooks:
         specifier: experimental
-        version: 0.0.0-experimental-66f09bd0-20250806(eslint@8.57.1)
+        version: 0.0.0-experimental-3958d5d8-20250807(eslint@8.57.1)
       husky:
         specifier: ^9.1.7
         version: 9.1.7
@@ -190,8 +190,8 @@ importers:
         specifier: ^4.3.0
         version: 4.3.0(@types/react@19.1.2)
       '@sanity/sdk-react':
-        specifier: ^2.1.1
-        version: 2.1.1(@types/react@19.1.2)(immer@10.1.1)(react-dom@19.1.0(react@19.1.0))(react@19.1.0)(use-sync-external-store@1.5.0(react@19.1.0))
+        specifier: ^2.1.2
+        version: 2.1.2(@types/react@19.1.2)(immer@10.1.1)(react-dom@19.1.0(react@19.1.0))(react@19.1.0)(use-sync-external-store@1.5.0(react@19.1.0))
       '@sanity/types':
         specifier: ^4.3.0
         version: 4.3.0(@types/react@19.1.2)
@@ -1224,15 +1224,15 @@ packages:
   '@sanity/schema@4.3.0':
     resolution: {integrity: sha512-mnz/q6eNw28lpPJf6YaCNVaIDy2ZFn/NRpEU7v7euCn6Pzkybmi5pzvKC1Q+Shd/5HcPkhFtHVDziTqkH3AjWg==}
 
-  '@sanity/sdk-react@2.1.1':
-    resolution: {integrity: sha512-OJV9hwAgnATTatmFmhYf3MOYePO6pXV9UHhSmujMxi8uJjAsdlRs0/ADWwpjfOLCpvuv94bRyNgOUS02z6cSug==}
+  '@sanity/sdk-react@2.1.2':
+    resolution: {integrity: sha512-Q1O4M6YICNbwB/HoU9DjvgBeUYwN5S0JBM/+eiIfJwaHod0/ShjA8xL9fLlMUxaMDSMXuJIP5Jvd72uBUhB3hA==}
     engines: {node: '>=20.0.0'}
     peerDependencies:
       react: ^18.0.0 || ^19.0.0
       react-dom: ^18.0.0 || ^19.0.0
 
-  '@sanity/sdk@2.1.1':
-    resolution: {integrity: sha512-m5DrmO1eiJbFHu08X2weQxU3IKsDTRNrqdx7KsEcGcrqOj+C36En7XPVgtwtFxEurm0GimdoGuC7P9Kvhy/XEw==}
+  '@sanity/sdk@2.1.2':
+    resolution: {integrity: sha512-gRBMDNvMUqlFTVoNgOLtcOFDO+e8Fh6v+BrEA4C5F18oi949ObjMmPB2aZMoyP3N3GQuqwVQP6L2PrhH70H7Bw==}
     engines: {node: '>=20.0.0'}
 
   '@sanity/types@3.96.0':
@@ -1837,8 +1837,8 @@ packages:
     peerDependencies:
       eslint: '>=7'
 
-  eslint-plugin-react-hooks@0.0.0-experimental-66f09bd0-20250806:
-    resolution: {integrity: sha512-O8fe2p/h8L2hxUWx4U51ul+4jWuIZA4kduauFLelaYcYOHu1Yx9DQGm8NBOtkFOmVD9vRRZXmunwLtGlblIGmQ==}
+  eslint-plugin-react-hooks@0.0.0-experimental-3958d5d8-20250807:
+    resolution: {integrity: sha512-oWulagV2xpknkvxuyw5WlIiXNXY1YdbHlMb0iVRBAyyhejNM8PIA04rm6N2yPAiKS7HZVf+dfXxiw3lIfoqiYQ==}
     engines: {node: '>=18'}
     peerDependencies:
       eslint: ^3.0.0 || ^4.0.0 || ^5.0.0 || ^6.0.0 || ^7.0.0 || ^8.0.0-0 || ^9.0.0
@@ -4487,11 +4487,11 @@ snapshots:
       - debug
       - supports-color
 
-  '@sanity/sdk-react@2.1.1(@types/react@19.1.2)(immer@10.1.1)(react-dom@19.1.0(react@19.1.0))(react@19.1.0)(use-sync-external-store@1.5.0(react@19.1.0))':
+  '@sanity/sdk-react@2.1.2(@types/react@19.1.2)(immer@10.1.1)(react-dom@19.1.0(react@19.1.0))(react@19.1.0)(use-sync-external-store@1.5.0(react@19.1.0))':
     dependencies:
       '@sanity/client': 7.8.2
       '@sanity/message-protocol': 0.12.0
-      '@sanity/sdk': 2.1.1(@types/react@19.1.2)(immer@10.1.1)(react@19.1.0)(use-sync-external-store@1.5.0(react@19.1.0))
+      '@sanity/sdk': 2.1.2(@types/react@19.1.2)(immer@10.1.1)(react@19.1.0)(use-sync-external-store@1.5.0(react@19.1.0))
       '@sanity/types': 3.96.0(@types/react@19.1.2)
       '@types/lodash-es': 4.17.12
       groq: 3.88.1-typegen-experimental.0
@@ -4507,7 +4507,7 @@ snapshots:
       - immer
       - use-sync-external-store
 
-  '@sanity/sdk@2.1.1(@types/react@19.1.2)(immer@10.1.1)(react@19.1.0)(use-sync-external-store@1.5.0(react@19.1.0))':
+  '@sanity/sdk@2.1.2(@types/react@19.1.2)(immer@10.1.1)(react@19.1.0)(use-sync-external-store@1.5.0(react@19.1.0))':
     dependencies:
       '@sanity/bifur-client': 0.4.1
       '@sanity/client': 7.8.2
@@ -5177,7 +5177,7 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  eslint-plugin-react-hooks@0.0.0-experimental-66f09bd0-20250806(eslint@8.57.1):
+  eslint-plugin-react-hooks@0.0.0-experimental-3958d5d8-20250807(eslint@8.57.1):
     dependencies:
       '@babel/core': 7.27.4
       '@babel/parser': 7.27.5

@@ -61,7 +61,7 @@
     "react": "^19.1.0"
   },
   "dependencies": {
-    "@xstate/react": "^5.0.5",
+    "@xstate/react": "^6.0.0",
     "remeda": "^2.21.3",
     "xstate": "^5.19.4"
   }

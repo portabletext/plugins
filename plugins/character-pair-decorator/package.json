@@ -63,6 +63,6 @@
   "dependencies": {
     "@xstate/react": "^6.0.0",
     "remeda": "^2.21.3",
-    "xstate": "^5.19.4"
+    "xstate": "^5.20.2"
   }
 }

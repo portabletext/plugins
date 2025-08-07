@@ -90,8 +90,8 @@ importers:
         specifier: workspace:^
         version: link:../../plugins/one-line
       '@xstate/store':
-        specifier: ^3.6.2
-        version: 3.6.2(react@19.1.0)
+        specifier: ^3.8.5
+        version: 3.8.5(react@19.1.0)
       react:
         specifier: ^19.0.0
         version: 19.1.0
@@ -127,7 +127,7 @@ importers:
         specifier: ^2.21.3
         version: 2.21.3
       xstate:
-        specifier: ^5.19.4
+        specifier: ^5.20.2
         version: 5.20.2
     devDependencies:
       '@portabletext/editor':
@@ -1481,8 +1481,8 @@ packages:
       xstate:
         optional: true
 
-  '@xstate/store@3.6.2':
-    resolution: {integrity: sha512-jsaQC+zluanhqWr/Y3KGxfM4tTbfQCGRQ6AxF+hTAZ+YwVRExk7T2ovHzgok1D1w/r4lV/uUrn7zSt2k3vMyNA==}
+  '@xstate/store@3.8.5':
+    resolution: {integrity: sha512-XzuEv/xWkoLDh6PMHX+uTCTRzPMi96/hwhg263h7d4JMPlL+0FIa/5xIyx45+zxHcWzM7OLAhr29kGW7qPNoYA==}
     peerDependencies:
       react: ^18.2.0 || ^19.0.0
       solid-js: ^1.7.6
@@ -4837,7 +4837,7 @@ snapshots:
     transitivePeerDependencies:
       - '@types/react'
 
-  '@xstate/store@3.6.2(react@19.1.0)':
+  '@xstate/store@3.8.5(react@19.1.0)':
     optionalDependencies:
       react: 19.1.0
 

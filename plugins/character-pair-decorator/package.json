@@ -52,12 +52,12 @@
     "test:unit:watch": "vitest"
   },
   "devDependencies": {
-    "@portabletext/editor": "^2.1.7",
+    "@portabletext/editor": "^2.1.11",
     "@types/react": "^19.1.2",
     "react": "^19.1.0"
   },
   "peerDependencies": {
-    "@portabletext/editor": "^2.1.7",
+    "@portabletext/editor": "^2.1.11",
     "react": "^19.1.0"
   },
   "dependencies": {

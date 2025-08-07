@@ -78,8 +78,8 @@ importers:
   apps/playground:
     dependencies:
       '@portabletext/editor':
-        specifier: ^2.1.7
-        version: 2.1.7(@sanity/schema@4.3.0(@types/react@19.1.2))(@sanity/types@4.3.0(@types/react@19.1.2))(@types/react@19.1.2)(react-dom@19.1.0(react@19.1.0))(react@19.1.0)(rxjs@7.8.2)
+        specifier: ^2.1.11
+        version: 2.1.11(@sanity/schema@4.3.0(@types/react@19.1.2))(@sanity/types@4.3.0(@types/react@19.1.2))(@types/react@19.1.2)(react-dom@19.1.0(react@19.1.0))(react@19.1.0)(rxjs@7.8.2)
       '@portabletext/plugin-character-pair-decorator':
         specifier: workspace:^
         version: link:../../plugins/character-pair-decorator
@@ -122,17 +122,17 @@ importers:
     dependencies:
       '@xstate/react':
         specifier: ^5.0.5
-        version: 5.0.5(@types/react@19.1.2)(react@19.1.0)(xstate@5.20.1)
+        version: 5.0.5(@types/react@19.1.2)(react@19.1.0)(xstate@5.20.2)
       remeda:
         specifier: ^2.21.3
         version: 2.21.3
       xstate:
         specifier: ^5.19.4
-        version: 5.20.1
+        version: 5.20.2
     devDependencies:
       '@portabletext/editor':
-        specifier: ^2.1.7
-        version: 2.1.7(@sanity/schema@4.3.0(@types/react@19.1.2))(@sanity/types@4.3.0(@types/react@19.1.2))(@types/react@19.1.2)(react-dom@19.1.0(react@19.1.0))(react@19.1.0)(rxjs@7.8.2)
+        specifier: ^2.1.11
+        version: 2.1.11(@sanity/schema@4.3.0(@types/react@19.1.2))(@sanity/types@4.3.0(@types/react@19.1.2))(@types/react@19.1.2)(react-dom@19.1.0(react@19.1.0))(react@19.1.0)(rxjs@7.8.2)
       '@types/react':
         specifier: ^19.1.2
         version: 19.1.2
@@ -147,8 +147,8 @@ importers:
         version: link:../character-pair-decorator
     devDependencies:
       '@portabletext/editor':
-        specifier: ^2.1.7
-        version: 2.1.7(@sanity/schema@4.3.0(@types/react@19.1.2))(@sanity/types@4.3.0(@types/react@19.1.2))(@types/react@19.1.2)(react-dom@19.1.0(react@19.1.0))(react@19.1.0)(rxjs@7.8.2)
+        specifier: ^2.1.11
+        version: 2.1.11(@sanity/schema@4.3.0(@types/react@19.1.2))(@sanity/types@4.3.0(@types/react@19.1.2))(@types/react@19.1.2)(react-dom@19.1.0(react@19.1.0))(react@19.1.0)(rxjs@7.8.2)
       '@types/react':
         specifier: ^19.1.2
         version: 19.1.2
@@ -159,8 +159,8 @@ importers:
   plugins/one-line:
     devDependencies:
       '@portabletext/editor':
-        specifier: ^2.1.7
-        version: 2.1.7(@sanity/schema@4.3.0(@types/react@19.1.2))(@sanity/types@4.3.0(@types/react@19.1.2))(@types/react@19.1.2)(react-dom@19.1.0(react@19.1.0))(react@19.1.0)(rxjs@7.8.2)
+        specifier: ^2.1.11
+        version: 2.1.11(@sanity/schema@4.3.0(@types/react@19.1.2))(@sanity/types@4.3.0(@types/react@19.1.2))(@types/react@19.1.2)(react-dom@19.1.0(react@19.1.0))(react@19.1.0)(rxjs@7.8.2)
       '@types/react':
         specifier: ^19.1.2
         version: 19.1.2
@@ -181,8 +181,8 @@ importers:
         version: 19.1.0-rc.1(react@19.1.0)
     devDependencies:
       '@portabletext/editor':
-        specifier: ^2.1.7
-        version: 2.1.7(@sanity/schema@4.3.0(@types/react@19.1.2))(@sanity/types@4.3.0(@types/react@19.1.2))(@types/react@19.1.2)(react-dom@19.1.0(react@19.1.0))(react@19.1.0)(rxjs@7.8.2)
+        specifier: ^2.1.11
+        version: 2.1.11(@sanity/schema@4.3.0(@types/react@19.1.2))(@sanity/types@4.3.0(@types/react@19.1.2))(@types/react@19.1.2)(react-dom@19.1.0(react@19.1.0))(react@19.1.0)(rxjs@7.8.2)
       '@portabletext/patches':
         specifier: ^1.1.6
         version: 1.1.6
@@ -856,18 +856,18 @@ packages:
   '@polka/url@1.0.0-next.29':
     resolution: {integrity: sha512-wwQAWhWSuHaag8c4q/KN/vCoeOJYshAIvMQwD4GpSb3OiZklFfvAgmj0VCBBImRpuF/aFgIRzllXlVX93Jevww==}
 
-  '@portabletext/block-tools@2.0.5':
-    resolution: {integrity: sha512-BAeHP3TA93CMguKFSzRVkbX3ZMXlTuVLJF70vuj4Cvts6E1keKQyKb/TTs2oPw/eNUv51qG0NVyrBSsfdUVqGQ==}
+  '@portabletext/block-tools@2.0.8':
+    resolution: {integrity: sha512-scqpOduDxMXZRNQIHO6g8oNy+SsndtEF1FdLuLiosdDf6LXvx3qM4ck0FOsts1Yf8v6fY8GmQ87O54DSMfnyMw==}
     peerDependencies:
-      '@sanity/types': ^4.2.0
+      '@sanity/types': ^4.3.0
       '@types/react': ^18.3 || ^19
 
-  '@portabletext/editor@2.1.7':
-    resolution: {integrity: sha512-SS3q7+RddVMnPcpVzVPVpsiKbN1pCEB/qrfcIYQjFCHmeciM8n0sd/pYumGvcgufDBHfpZAy6u0rR9TFIPtplg==}
+  '@portabletext/editor@2.1.11':
+    resolution: {integrity: sha512-kEFMNac4o8xJGgcbfefhUYnxHFIKX0Tzfj+C6sOc1EA3pFIT1Ci+etQqyM59lhLaGm7e0EYxrdf3R8fZyXw8ew==}
     engines: {node: '>=20.19'}
     peerDependencies:
-      '@sanity/schema': ^4.2.0
-      '@sanity/types': ^4.2.0
+      '@sanity/schema': ^4.3.0
+      '@sanity/types': ^4.3.0
       react: ^18.3 || ^19
       rxjs: ^7.8.2
 
@@ -3371,8 +3371,8 @@ packages:
       utf-8-validate:
         optional: true
 
-  xstate@5.20.1:
-    resolution: {integrity: sha512-i9ZpNnm/XhCOMUxae1suT8PjYNTStZWbhmuKt4xeTPaYG5TS0Fz0i+Ka5yxoNPpaHW3VW6JIowrwFgSTZONxig==}
+  xstate@5.20.2:
+    resolution: {integrity: sha512-GZmLmc+WPKfFRxuTDAxCg0cUhS/ZnWaRD86DO8MKizeK4a050jd5k7UNnIQ2jJDWRig2/r0tmVXeezUNIhoz5Q==}
 
   yallist@3.1.1:
     resolution: {integrity: sha512-a4UGQaWPH59mOXUYnAG2ewncQS4i4F43Tv3JoAM+s2VDAmS9NsK8GpDMLrCHPksFT7h3K6TOoUNn2pb7RoXx4g==}
@@ -4094,22 +4094,22 @@ snapshots:
 
   '@polka/url@1.0.0-next.29': {}
 
-  '@portabletext/block-tools@2.0.5(@sanity/types@4.3.0(@types/react@19.1.2))(@types/react@19.1.2)':
+  '@portabletext/block-tools@2.0.8(@sanity/types@4.3.0(@types/react@19.1.2))(@types/react@19.1.2)':
     dependencies:
       '@sanity/types': 4.3.0(@types/react@19.1.2)
       '@types/react': 19.1.2
       get-random-values-esm: 1.0.2
       lodash: 4.17.21
 
-  '@portabletext/editor@2.1.7(@sanity/schema@4.3.0(@types/react@19.1.2))(@sanity/types@4.3.0(@types/react@19.1.2))(@types/react@19.1.2)(react-dom@19.1.0(react@19.1.0))(react@19.1.0)(rxjs@7.8.2)':
+  '@portabletext/editor@2.1.11(@sanity/schema@4.3.0(@types/react@19.1.2))(@sanity/types@4.3.0(@types/react@19.1.2))(@types/react@19.1.2)(react-dom@19.1.0(react@19.1.0))(react@19.1.0)(rxjs@7.8.2)':
     dependencies:
-      '@portabletext/block-tools': 2.0.5(@sanity/types@4.3.0(@types/react@19.1.2))(@types/react@19.1.2)
+      '@portabletext/block-tools': 2.0.8(@sanity/types@4.3.0(@types/react@19.1.2))(@types/react@19.1.2)
       '@portabletext/keyboard-shortcuts': 1.1.1
       '@portabletext/patches': 1.1.6
       '@portabletext/to-html': 2.0.14
       '@sanity/schema': 4.3.0(@types/react@19.1.2)
       '@sanity/types': 4.3.0(@types/react@19.1.2)
-      '@xstate/react': 6.0.0(@types/react@19.1.2)(react@19.1.0)(xstate@5.20.1)
+      '@xstate/react': 6.0.0(@types/react@19.1.2)(react@19.1.0)(xstate@5.20.2)
       debug: 4.4.1
       get-random-values-esm: 1.0.2
       immer: 10.1.1
@@ -4121,7 +4121,7 @@ snapshots:
       slate: 0.118.0
       slate-dom: 0.117.4(slate@0.118.0)
       slate-react: 0.117.4(react-dom@19.1.0(react@19.1.0))(react@19.1.0)(slate-dom@0.117.4(slate@0.118.0))(slate@0.118.0)
-      xstate: 5.20.1
+      xstate: 5.20.2
     transitivePeerDependencies:
       - '@types/react'
       - react-dom
@@ -4373,13 +4373,13 @@ snapshots:
     dependencies:
       rxjs: 7.8.2
       uuid: 11.1.0
-      xstate: 5.20.1
+      xstate: 5.20.2
 
   '@sanity/comlink@3.0.5':
     dependencies:
       rxjs: 7.8.2
       uuid: 11.1.0
-      xstate: 5.20.1
+      xstate: 5.20.2
 
   '@sanity/descriptors@1.1.1':
     dependencies:
@@ -4836,23 +4836,23 @@ snapshots:
       loupe: 3.1.3
       tinyrainbow: 2.0.0
 
-  '@xstate/react@5.0.5(@types/react@19.1.2)(react@19.1.0)(xstate@5.20.1)':
+  '@xstate/react@5.0.5(@types/react@19.1.2)(react@19.1.0)(xstate@5.20.2)':
     dependencies:
       react: 19.1.0
       use-isomorphic-layout-effect: 1.2.0(@types/react@19.1.2)(react@19.1.0)
       use-sync-external-store: 1.5.0(react@19.1.0)
     optionalDependencies:
-      xstate: 5.20.1
+      xstate: 5.20.2
     transitivePeerDependencies:
       - '@types/react'
 
-  '@xstate/react@6.0.0(@types/react@19.1.2)(react@19.1.0)(xstate@5.20.1)':
+  '@xstate/react@6.0.0(@types/react@19.1.2)(react@19.1.0)(xstate@5.20.2)':
     dependencies:
       react: 19.1.0
       use-isomorphic-layout-effect: 1.2.0(@types/react@19.1.2)(react@19.1.0)
       use-sync-external-store: 1.5.0(react@19.1.0)
     optionalDependencies:
-      xstate: 5.20.1
+      xstate: 5.20.2
     transitivePeerDependencies:
       - '@types/react'
 
@@ -6689,7 +6689,7 @@ snapshots:
 
   ws@8.18.1: {}
 
-  xstate@5.20.1: {}
+  xstate@5.20.2: {}
 
   yallist@3.1.1: {}
 

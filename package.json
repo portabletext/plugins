@@ -15,6 +15,7 @@
     "format:staged": "pretty-quick --staged",
     "postinstall": "husky",
     "lint:fix": "turbo lint:fix",
+    "release": "pnpm build --filter=./plugins/* && changeset publish",
     "test:browser:chromium": "turbo test:browser:chromium",
     "test:browser:chromium:watch": "turbo test:browser:chromium:watch",
     "test:browser:firefox": "turbo test:browser:firefox",

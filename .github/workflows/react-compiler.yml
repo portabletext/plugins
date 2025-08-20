@@ -26,7 +26,7 @@ jobs:
         with:
           cache: pnpm
           node-version: lts/*
-      - run: pnpm -r up --ignore-scripts react-compiler-runtime@beta babel-plugin-react-compiler@beta eslint-plugin-react-compiler@beta
+      - run: pnpm -r up --ignore-scripts react-compiler-runtime@rc babel-plugin-react-compiler@rc eslint-plugin-react-compiler@rc
       - uses: actions/create-github-app-token@v2
         id: generate-token
         with:

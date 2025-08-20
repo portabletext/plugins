@@ -62,7 +62,7 @@
     "@testing-library/user-event": "^14.6.1",
     "@types/react": "^19.1.2",
     "@vitejs/plugin-react": "^4.4.1",
-    "babel-plugin-react-compiler": "19.0.0-beta-e993439-20250328",
+    "babel-plugin-react-compiler": "19.1.0-rc.2",
     "playwright": "^1.52.0",
     "react": "^19.1.0",
     "react-dom": "^19.1.0",
@@ -77,6 +77,6 @@
   "dependencies": {
     "@sanity/diff-patch": "^6.0.0",
     "@sanity/json-match": "^1.0.5",
-    "react-compiler-runtime": "19.1.0-rc.1"
+    "react-compiler-runtime": "19.1.0-rc.2"
   }
 }

@@ -41,8 +41,12 @@
       "groupName": "xstate"
     },
     {
-      "matchPackageNames": ["react-compiler-runtime"],
-      "followTag": "beta"
+      "matchPackageNames": [
+        "babel-plugin-react-compiler",
+        "eslint-plugin-react-compiler",
+        "react-compiler-runtime"
+      ],
+      "followTag": "rc"
     }
   ]
 }

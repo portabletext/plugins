@@ -84,8 +84,8 @@ importers:
   apps/playground:
     dependencies:
       '@portabletext/editor':
-        specifier: ^2.1.11
-        version: 2.1.11(@sanity/schema@4.3.0(@types/react@19.1.2))(@sanity/types@4.3.0(@types/react@19.1.2))(@types/react@19.1.2)(react-dom@19.1.0(react@19.1.0))(react@19.1.0)(rxjs@7.8.2)
+        specifier: ^2.4.1
+        version: 2.4.1(@portabletext/sanity-bridge@1.1.3(@sanity/schema@4.3.0(@types/react@19.1.2))(@sanity/types@4.3.0(@types/react@19.1.2)))(@sanity/schema@4.3.0(@types/react@19.1.2))(@sanity/types@4.3.0(@types/react@19.1.2))(@types/react@19.1.2)(react-dom@19.1.0(react@19.1.0))(react@19.1.0)(rxjs@7.8.2)
       '@portabletext/plugin-character-pair-decorator':
         specifier: workspace:^
         version: link:../../plugins/character-pair-decorator
@@ -137,8 +137,8 @@ importers:
         version: 5.20.2
     devDependencies:
       '@portabletext/editor':
-        specifier: ^2.1.11
-        version: 2.1.11(@sanity/schema@4.3.0(@types/react@19.1.2))(@sanity/types@4.3.0(@types/react@19.1.2))(@types/react@19.1.2)(react-dom@19.1.0(react@19.1.0))(react@19.1.0)(rxjs@7.8.2)
+        specifier: ^2.4.1
+        version: 2.4.1(@portabletext/sanity-bridge@1.1.3(@sanity/schema@4.3.0(@types/react@19.1.2))(@sanity/types@4.3.0(@types/react@19.1.2)))(@sanity/schema@4.3.0(@types/react@19.1.2))(@sanity/types@4.3.0(@types/react@19.1.2))(@types/react@19.1.2)(react-dom@19.1.0(react@19.1.0))(react@19.1.0)(rxjs@7.8.2)
       '@types/react':
         specifier: ^19.1.2
         version: 19.1.2
@@ -153,8 +153,8 @@ importers:
         version: link:../character-pair-decorator
     devDependencies:
       '@portabletext/editor':
-        specifier: ^2.1.11
-        version: 2.1.11(@sanity/schema@4.3.0(@types/react@19.1.2))(@sanity/types@4.3.0(@types/react@19.1.2))(@types/react@19.1.2)(react-dom@19.1.0(react@19.1.0))(react@19.1.0)(rxjs@7.8.2)
+        specifier: ^2.4.1
+        version: 2.4.1(@portabletext/sanity-bridge@1.1.3(@sanity/schema@4.3.0(@types/react@19.1.2))(@sanity/types@4.3.0(@types/react@19.1.2)))(@sanity/schema@4.3.0(@types/react@19.1.2))(@sanity/types@4.3.0(@types/react@19.1.2))(@types/react@19.1.2)(react-dom@19.1.0(react@19.1.0))(react@19.1.0)(rxjs@7.8.2)
       '@types/react':
         specifier: ^19.1.2
         version: 19.1.2
@@ -165,8 +165,8 @@ importers:
   plugins/one-line:
     devDependencies:
       '@portabletext/editor':
-        specifier: ^2.1.11
-        version: 2.1.11(@sanity/schema@4.3.0(@types/react@19.1.2))(@sanity/types@4.3.0(@types/react@19.1.2))(@types/react@19.1.2)(react-dom@19.1.0(react@19.1.0))(react@19.1.0)(rxjs@7.8.2)
+        specifier: ^2.4.1
+        version: 2.4.1(@portabletext/sanity-bridge@1.1.3(@sanity/schema@4.3.0(@types/react@19.1.2))(@sanity/types@4.3.0(@types/react@19.1.2)))(@sanity/schema@4.3.0(@types/react@19.1.2))(@sanity/types@4.3.0(@types/react@19.1.2))(@types/react@19.1.2)(react-dom@19.1.0(react@19.1.0))(react@19.1.0)(rxjs@7.8.2)
       '@types/react':
         specifier: ^19.1.2
         version: 19.1.2
@@ -187,11 +187,11 @@ importers:
         version: 19.1.0-rc.1(react@19.1.0)
     devDependencies:
       '@portabletext/editor':
-        specifier: ^2.1.11
-        version: 2.1.11(@sanity/schema@4.3.0(@types/react@19.1.2))(@sanity/types@4.3.0(@types/react@19.1.2))(@types/react@19.1.2)(react-dom@19.1.0(react@19.1.0))(react@19.1.0)(rxjs@7.8.2)
+        specifier: ^2.4.1
+        version: 2.4.1(@portabletext/sanity-bridge@1.1.3(@sanity/schema@4.3.0(@types/react@19.1.2))(@sanity/types@4.3.0(@types/react@19.1.2)))(@sanity/schema@4.3.0(@types/react@19.1.2))(@sanity/types@4.3.0(@types/react@19.1.2))(@types/react@19.1.2)(react-dom@19.1.0(react@19.1.0))(react@19.1.0)(rxjs@7.8.2)
       '@portabletext/patches':
         specifier: ^1.1.6
-        version: 1.1.6
+        version: 1.1.7
       '@sanity/schema':
         specifier: ^4.3.0
         version: 4.3.0(@types/react@19.1.2)
@@ -938,26 +938,37 @@ packages:
   '@polka/url@1.0.0-next.29':
     resolution: {integrity: sha512-wwQAWhWSuHaag8c4q/KN/vCoeOJYshAIvMQwD4GpSb3OiZklFfvAgmj0VCBBImRpuF/aFgIRzllXlVX93Jevww==}
 
-  '@portabletext/block-tools@2.0.8':
-    resolution: {integrity: sha512-scqpOduDxMXZRNQIHO6g8oNy+SsndtEF1FdLuLiosdDf6LXvx3qM4ck0FOsts1Yf8v6fY8GmQ87O54DSMfnyMw==}
+  '@portabletext/block-tools@3.3.1':
+    resolution: {integrity: sha512-VqaeGG4TK6V+Ov/EmodzSNM3mZGZ35LlCh0aUmQPAVyFNuvt9hYC+l0Da6KEL643aYoySEYgxyh+k7TY0ShKYQ==}
     peerDependencies:
-      '@sanity/types': ^4.3.0
+      '@sanity/types': ^4.5.0
       '@types/react': ^18.3 || ^19
 
-  '@portabletext/editor@2.1.11':
-    resolution: {integrity: sha512-kEFMNac4o8xJGgcbfefhUYnxHFIKX0Tzfj+C6sOc1EA3pFIT1Ci+etQqyM59lhLaGm7e0EYxrdf3R8fZyXw8ew==}
-    engines: {node: '>=20.19'}
+  '@portabletext/editor@2.4.1':
+    resolution: {integrity: sha512-KoaXS7jbhu1z5lvGvPqoeAJnvbjao0wEog48CDqFIHMzQTPJ6er3OQ4GmuogFqq70Q3cF1ftjbwIhicmI8KHcw==}
+    engines: {node: '>=20.19 <22 || >=22.12'}
     peerDependencies:
-      '@sanity/schema': ^4.3.0
-      '@sanity/types': ^4.3.0
+      '@portabletext/sanity-bridge': ^1.1.3
+      '@sanity/schema': ^4.5.0
+      '@sanity/types': ^4.5.0
       react: ^18.3 || ^19
       rxjs: ^7.8.2
 
   '@portabletext/keyboard-shortcuts@1.1.1':
     resolution: {integrity: sha512-wCoH9+D9wci5sCSAsjJRnzV769e/xYw/ZjbtOmPGncE3EcWa/7+qP8kYFRj/ptsORJw3jRZkhXiUwYkD5jaC2w==}
 
-  '@portabletext/patches@1.1.6':
-    resolution: {integrity: sha512-1cjL+HIZ85KxAWcFD6M6gKPAaEm1SjqvRrltBreaTlWS8tebghxJAKW47doGzwQzB1I2sG069CoGqgLcRsT8OA==}
+  '@portabletext/patches@1.1.7':
+    resolution: {integrity: sha512-rismkBJvFcHZJdHLu4f8VbqqY7OepPzBxFmdKGQMqyRghJBQeoEWJrp96i4nOWocPZwtlDlxGN/BLrB3TMRkbQ==}
+
+  '@portabletext/sanity-bridge@1.1.3':
+    resolution: {integrity: sha512-cWoTyMVM4Cjtm1FSWUcT7eKXMwVknH6rn4qc0j+NzZ66d4n1XTjQM6alAJjfuB5Ak8lAD+8AO5z+V9xXEyds4A==}
+    engines: {node: '>=20.19 <22 || >=22.12'}
+    peerDependencies:
+      '@sanity/schema': ^4.5.0
+      '@sanity/types': ^4.5.0
+
+  '@portabletext/schema@1.0.1':
+    resolution: {integrity: sha512-oPyxLOpBzTKHMLdwYVaBR3NaJrtRgGlWFNwah8voQFTqI+LjsX6OiImrfnYq27IfWGZ5hbS/ntqRXjaDX16Ecg==}
 
   '@portabletext/to-html@2.0.14':
     resolution: {integrity: sha512-wW2et59PoOT/mc56C4U3z+DKAx1yjieN/gp2q9szTfTwusMpb6mclR9+EPIfGrcQWdwGn6PEN7nxVFXnqlZ/0A==}
@@ -4474,18 +4485,24 @@ snapshots:
 
   '@polka/url@1.0.0-next.29': {}
 
-  '@portabletext/block-tools@2.0.8(@sanity/types@4.3.0(@types/react@19.1.2))(@types/react@19.1.2)':
+  '@portabletext/block-tools@3.3.1(@sanity/schema@4.3.0(@types/react@19.1.2))(@sanity/types@4.3.0(@types/react@19.1.2))(@types/react@19.1.2)':
     dependencies:
+      '@portabletext/sanity-bridge': 1.1.3(@sanity/schema@4.3.0(@types/react@19.1.2))(@sanity/types@4.3.0(@types/react@19.1.2))
+      '@portabletext/schema': 1.0.1
       '@sanity/types': 4.3.0(@types/react@19.1.2)
       '@types/react': 19.1.2
       get-random-values-esm: 1.0.2
       lodash: 4.17.21
+    transitivePeerDependencies:
+      - '@sanity/schema'
 
-  '@portabletext/editor@2.1.11(@sanity/schema@4.3.0(@types/react@19.1.2))(@sanity/types@4.3.0(@types/react@19.1.2))(@types/react@19.1.2)(react-dom@19.1.0(react@19.1.0))(react@19.1.0)(rxjs@7.8.2)':
+  '@portabletext/editor@2.4.1(@portabletext/sanity-bridge@1.1.3(@sanity/schema@4.3.0(@types/react@19.1.2))(@sanity/types@4.3.0(@types/react@19.1.2)))(@sanity/schema@4.3.0(@types/react@19.1.2))(@sanity/types@4.3.0(@types/react@19.1.2))(@types/react@19.1.2)(react-dom@19.1.0(react@19.1.0))(react@19.1.0)(rxjs@7.8.2)':
     dependencies:
-      '@portabletext/block-tools': 2.0.8(@sanity/types@4.3.0(@types/react@19.1.2))(@types/react@19.1.2)
+      '@portabletext/block-tools': 3.3.1(@sanity/schema@4.3.0(@types/react@19.1.2))(@sanity/types@4.3.0(@types/react@19.1.2))(@types/react@19.1.2)
       '@portabletext/keyboard-shortcuts': 1.1.1
-      '@portabletext/patches': 1.1.6
+      '@portabletext/patches': 1.1.7
+      '@portabletext/sanity-bridge': 1.1.3(@sanity/schema@4.3.0(@types/react@19.1.2))(@sanity/types@4.3.0(@types/react@19.1.2))
+      '@portabletext/schema': 1.0.1
       '@portabletext/to-html': 2.0.14
       '@sanity/schema': 4.3.0(@types/react@19.1.2)
       '@sanity/types': 4.3.0(@types/react@19.1.2)
@@ -4509,10 +4526,20 @@ snapshots:
 
   '@portabletext/keyboard-shortcuts@1.1.1': {}
 
-  '@portabletext/patches@1.1.6':
+  '@portabletext/patches@1.1.7':
     dependencies:
       '@sanity/diff-match-patch': 3.2.0
       lodash: 4.17.21
+
+  '@portabletext/sanity-bridge@1.1.3(@sanity/schema@4.3.0(@types/react@19.1.2))(@sanity/types@4.3.0(@types/react@19.1.2))':
+    dependencies:
+      '@portabletext/schema': 1.0.1
+      '@sanity/schema': 4.3.0(@types/react@19.1.2)
+      '@sanity/types': 4.3.0(@types/react@19.1.2)
+      get-random-values-esm: 1.0.2
+      lodash.startcase: 4.4.0
+
+  '@portabletext/schema@1.0.1': {}
 
   '@portabletext/to-html@2.0.14':
     dependencies:

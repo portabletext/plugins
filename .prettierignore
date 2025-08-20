@@ -1,5 +1,4 @@
 dist
-.release-please-manifest.json
 CHANGELOG.md
 pnpm-lock.yaml
 .changeset/*.md

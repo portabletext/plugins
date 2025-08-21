@@ -54,7 +54,7 @@
   },
   "devDependencies": {
     "@portabletext/editor": "^2.4.1",
-    "@portabletext/patches": "^1.1.6",
+    "@portabletext/patches": "^1.1.8",
     "@sanity/schema": "^4.3.0",
     "@sanity/sdk-react": "^2.1.2",
     "@sanity/types": "^4.3.0",

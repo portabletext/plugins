@@ -1,5 +1,13 @@
 # Changelog
 
+## 1.0.3
+
+### Patch Changes
+
+- [#91](https://github.com/portabletext/plugins/pull/91) [`bdc2e97`](https://github.com/portabletext/plugins/commit/bdc2e971c796e1861c4fbf53bb81b4614f60fa49) Thanks [@renovate](https://github.com/apps/renovate)! - fix(deps): update dependency @sanity/sdk-react to ^2.1.2
+
+- [`ac0c150`](https://github.com/portabletext/plugins/commit/ac0c150e769500d39a598b0a3da74617a3f29701) Thanks [@stipsan](https://github.com/stipsan)! - Upgrade react compiler to rc 2
+
 ## 1.0.2
 
 ### Patch Changes

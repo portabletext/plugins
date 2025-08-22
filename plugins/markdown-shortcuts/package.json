@@ -51,12 +51,12 @@
   },
   "devDependencies": {
     "@portabletext/editor": "^2.4.1",
-    "@types/react": "^19.1.2",
-    "react": "^19.1.0"
+    "@types/react": "^19.1.11",
+    "react": "^19.1.1"
   },
   "peerDependencies": {
     "@portabletext/editor": "^2.4.1",
-    "react": "^19.1.0"
+    "react": "^19.1.1"
   },
   "dependencies": {
     "@portabletext/plugin-character-pair-decorator": "workspace:^"

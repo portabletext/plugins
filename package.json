@@ -37,7 +37,7 @@
     "@changesets/cli": "^2.29.6",
     "@ianvs/prettier-plugin-sort-imports": "^4.4.1",
     "@playwright/test": "^1.52.0",
-    "@sanity/pkg-utils": "^7.6.1",
+    "@sanity/pkg-utils": "^7.11.9",
     "@sanity/prettier-config": "^1.0.4",
     "@typescript-eslint/eslint-plugin": "^8.31.1",
     "@typescript-eslint/parser": "^8.31.1",

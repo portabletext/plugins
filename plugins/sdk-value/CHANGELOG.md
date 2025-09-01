@@ -1,5 +1,13 @@
 # Changelog
 
+## 1.0.4
+
+### Patch Changes
+
+- [#103](https://github.com/portabletext/plugins/pull/103) [`e473911`](https://github.com/portabletext/plugins/commit/e4739110312b43c04631f64811621091719aa33f) Thanks [@ecoscript](https://github.com/apps/ecoscript)! - fix(deps): update React Compiler dependencies 🤖 ✨
+
+- [`6167380`](https://github.com/portabletext/plugins/commit/61673805b83e5c54163e22beeb98f02df7f0c231) Thanks [@stipsan](https://github.com/stipsan)! - react-compiler-runtime isn't needed
+
 ## 1.0.3
 
 ### Patch Changes

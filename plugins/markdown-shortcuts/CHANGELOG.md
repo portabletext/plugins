@@ -1,5 +1,16 @@
 # Changelog
 
+## 1.1.0
+
+### Minor Changes
+
+- [`909b379`](https://github.com/portabletext/plugins/commit/909b379df26d9c0dfc59dc9ede21e80a163f0a03) Thanks [@stipsan](https://github.com/stipsan)! - add react compiler
+
+### Patch Changes
+
+- Updated dependencies [[`909b379`](https://github.com/portabletext/plugins/commit/909b379df26d9c0dfc59dc9ede21e80a163f0a03)]:
+  - @portabletext/plugin-character-pair-decorator@1.1.0
+
 ## 1.0.16
 
 ### Patch Changes

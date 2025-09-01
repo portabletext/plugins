@@ -12,7 +12,7 @@
     },
     {
       "matchFileNames": ["plugins/**/*"],
-      "matchDepTypes": ["dependencies", "peerDependencies"],
+      "matchDepTypes": ["dependencies"],
       "rangeStrategy": "bump",
       "semanticCommitType": "fix"
     },

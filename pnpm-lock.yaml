@@ -130,8 +130,8 @@ importers:
         specifier: ^6.0.0
         version: 6.0.0(@types/react@19.1.2)(react@19.1.0)(xstate@5.21.0)
       remeda:
-        specifier: ^2.21.3
-        version: 2.21.3
+        specifier: ^2.30.0
+        version: 2.30.0
       xstate:
         specifier: ^5.21.0
         version: 5.21.0
@@ -3194,8 +3194,8 @@ packages:
     resolution: {integrity: sha512-8acYXXTI0AkQv6RAOjE3vOaIXZkT9wo4LOFbBKYQEEnnMNBpKqdUrI6S4NT0KPIo/WVvJ5tE/X5LF/TQUf0ekw==}
     engines: {node: '>=8'}
 
-  remeda@2.21.3:
-    resolution: {integrity: sha512-XXrZdLA10oEOQhLLzEJEiFFSKi21REGAkHdImIb4rt/XXy8ORGXh5HCcpUOsElfPNDb+X6TA/+wkh+p2KffYmg==}
+  remeda@2.30.0:
+    resolution: {integrity: sha512-TcRpI1ecqnMer3jHhFtMerGvHFCDlCHljUp0/9A4HxHOh5bSY3kP1l8nQDFMnWYJKl3MSarDNY1tb0Bs/bCmvw==}
 
   require-from-string@2.0.2:
     resolution: {integrity: sha512-Xf0nWe6RseziFMu+Ap9biiUbmplq6S9/p+7w7YXP/JBHhrUDDUhwa+vANyubuqfZWTveU//DYVGsDG7RKL/vEw==}
@@ -3595,8 +3595,8 @@ packages:
     resolution: {integrity: sha512-0fr/mIH1dlO+x7TlcMy+bIDqKPsw/70tVyeHW787goQjhmqaZe10uwLujubK9q9Lg6Fiho1KUKDYz0Z7k7g5/g==}
     engines: {node: '>=4'}
 
-  type-fest@4.40.1:
-    resolution: {integrity: sha512-9YvLNnORDpI+vghLU/Nf+zSv0kL47KbVJ1o3sKgoTefl6i+zebxbiDQWoe/oWWqPhIgQdRZRT1KA9sCPL810SA==}
+  type-fest@4.41.0:
+    resolution: {integrity: sha512-TeTSQ6H5YHvpqVwBRcnLDCBnDOHWYu7IvGbHT6N8AOymcr9PJGjc1GTtiWZTYg0NCgYwvnYWEkVChQAr9bjfwA==}
     engines: {node: '>=16'}
 
   typescript-eslint@8.41.0:
@@ -7071,9 +7071,9 @@ snapshots:
     dependencies:
       rc: 1.2.8
 
-  remeda@2.21.3:
+  remeda@2.30.0:
     dependencies:
-      type-fest: 4.40.1
+      type-fest: 4.41.0
 
   require-from-string@2.0.2: {}
 
@@ -7481,7 +7481,7 @@ snapshots:
 
   type-detect@4.0.8: {}
 
-  type-fest@4.40.1: {}
+  type-fest@4.41.0: {}
 
   typescript-eslint@8.41.0(eslint@9.34.0)(typescript@5.9.2):
     dependencies:

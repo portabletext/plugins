@@ -1,5 +1,14 @@
 # Changelog
 
+## 1.1.2
+
+### Patch Changes
+
+- [#100](https://github.com/portabletext/plugins/pull/100) [`afc2ce0`](https://github.com/portabletext/plugins/commit/afc2ce0047bc66fe84adb6324efddc5fea182a71) Thanks [@renovate](https://github.com/apps/renovate)! - fix(deps): update react monorepo
+
+- Updated dependencies [[`afc2ce0`](https://github.com/portabletext/plugins/commit/afc2ce0047bc66fe84adb6324efddc5fea182a71)]:
+  - @portabletext/plugin-character-pair-decorator@1.1.2
+
 ## 1.1.1
 
 ### Patch Changes

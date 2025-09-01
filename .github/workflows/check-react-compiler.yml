@@ -25,8 +25,5 @@ jobs:
       - name: Install project dependencies
         run: pnpm install
 
-      - name: Register Problem Matcher for ESLint that handles -f compact and shows warnings inline on PRs
-        run: echo "::add-matcher::.github/eslint-compact.json"
-
       - name: Check react compiler
-        run: pnpm check:react-compiler
+        run: pnpm check:react-compiler -- -f gha

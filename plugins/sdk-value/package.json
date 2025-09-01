@@ -43,7 +43,7 @@
   "scripts": {
     "build": "pkg-utils build --strict --check --clean",
     "check:lint": "biome lint .",
-    "check:react-compiler": "eslint --cache --no-inline-config --no-eslintrc --ignore-pattern '**/__tests__/**' --ext .cjs,.mjs,.js,.jsx,.ts,.tsx --parser @typescript-eslint/parser --plugin react-compiler --plugin react-hooks --rule 'react-compiler/react-compiler: [warn]' --rule 'react-hooks/rules-of-hooks: [error]' --rule 'react-hooks/exhaustive-deps: [error]' src",
+    "check:react-compiler": "eslint .",
     "check:types": "tsc",
     "check:types:watch": "tsc --watch",
     "clean": "del .turbo && del dist && del node_modules",
@@ -71,8 +71,8 @@
   "peerDependencies": {
     "@portabletext/editor": "^2.4.1",
     "@sanity/sdk-react": "^2.1.2",
-    "react": "^19.1.0",
-    "react-dom": "^19.1.0"
+    "react": "^19",
+    "react-dom": "^19"
   },
   "dependencies": {
     "@sanity/diff-patch": "^6.0.0",

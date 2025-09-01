@@ -3,6 +3,8 @@
   "compilerOptions": {
     "jsx": "preserve",
     "rootDir": ".",
-    "outDir": "./dist"
+    "outDir": "./dist",
+    "exactOptionalPropertyTypes": false,
+    "noUncheckedIndexedAccess": false
   }
 }

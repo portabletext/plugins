@@ -1,5 +1,16 @@
 # Changelog
 
+## 1.1.1
+
+### Patch Changes
+
+- [#102](https://github.com/portabletext/plugins/pull/102) [`a0371f1`](https://github.com/portabletext/plugins/commit/a0371f122f95a3bb38907230c53ee5f2c559dd18) Thanks [@renovate](https://github.com/apps/renovate)! - fix(deps): update dependency @portabletext/editor to ^2.6.9
+
+- [`b3018a8`](https://github.com/portabletext/plugins/commit/b3018a83ed088942cd42317074732b4e7bd580c0) Thanks [@stipsan](https://github.com/stipsan)! - Improve memoization in markdown plugin
+
+- Updated dependencies [[`a0371f1`](https://github.com/portabletext/plugins/commit/a0371f122f95a3bb38907230c53ee5f2c559dd18), [`44ef52c`](https://github.com/portabletext/plugins/commit/44ef52cc2102c81b075c887ac2686dabaf2f8ac7)]:
+  - @portabletext/plugin-character-pair-decorator@1.1.1
+
 ## 1.1.0
 
 ### Minor Changes

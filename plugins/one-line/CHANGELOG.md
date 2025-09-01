@@ -1,5 +1,11 @@
 # Changelog
 
+## 1.1.1
+
+### Patch Changes
+
+- [#102](https://github.com/portabletext/plugins/pull/102) [`a0371f1`](https://github.com/portabletext/plugins/commit/a0371f122f95a3bb38907230c53ee5f2c559dd18) Thanks [@renovate](https://github.com/apps/renovate)! - fix(deps): update dependency @portabletext/editor to ^2.6.9
+
 ## 1.1.0
 
 ### Minor Changes

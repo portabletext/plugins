@@ -24,11 +24,29 @@ export type MarkdownShortcutsPluginProps = MarkdownBehaviorsConfig & {
 /**
  * @beta
  */
-export function MarkdownShortcutsPlugin(props: MarkdownShortcutsPluginProps) {
+export function MarkdownShortcutsPlugin({
+  blockquoteStyle,
+  boldDecorator,
+  codeDecorator,
+  defaultStyle,
+  headingStyle,
+  horizontalRuleObject,
+  italicDecorator,
+  orderedList,
+  strikeThroughDecorator,
+  unorderedList,
+}: MarkdownShortcutsPluginProps) {
   const editor = useEditor()
 
   useEffect(() => {
-    const behaviors = createMarkdownBehaviors(props)
+    const behaviors = createMarkdownBehaviors({
+      blockquoteStyle,
+      defaultStyle,
+      headingStyle,
+      horizontalRuleObject,
+      orderedList,
+      unorderedList,
+    })
 
     const unregisterBehaviors = behaviors.map((behavior) =>
       editor.registerBehavior({behavior}),
@@ -39,43 +57,51 @@ export function MarkdownShortcutsPlugin(props: MarkdownShortcutsPluginProps) {
         unregisterBehavior()
       }
     }
-  }, [editor, props])
+  }, [
+    blockquoteStyle,
+    defaultStyle,
+    editor,
+    headingStyle,
+    horizontalRuleObject,
+    orderedList,
+    unorderedList,
+  ])
 
   return (
     <>
-      {props.boldDecorator ? (
+      {boldDecorator ? (
         <>
           <CharacterPairDecoratorPlugin
-            decorator={props.boldDecorator}
+            decorator={boldDecorator}
             pair={{char: '*', amount: 2}}
           />
           <CharacterPairDecoratorPlugin
-            decorator={props.boldDecorator}
+            decorator={boldDecorator}
             pair={{char: '_', amount: 2}}
           />
         </>
       ) : null}
-      {props.codeDecorator ? (
+      {codeDecorator ? (
         <CharacterPairDecoratorPlugin
-          decorator={props.codeDecorator}
+          decorator={codeDecorator}
           pair={{char: '`', amount: 1}}
         />
       ) : null}
-      {props.italicDecorator ? (
+      {italicDecorator ? (
         <>
           <CharacterPairDecoratorPlugin
-            decorator={props.italicDecorator}
+            decorator={italicDecorator}
             pair={{char: '*', amount: 1}}
           />
           <CharacterPairDecoratorPlugin
-            decorator={props.italicDecorator}
+            decorator={italicDecorator}
             pair={{char: '_', amount: 1}}
           />
         </>
       ) : null}
-      {props.strikeThroughDecorator ? (
+      {strikeThroughDecorator ? (
         <CharacterPairDecoratorPlugin
-          decorator={props.strikeThroughDecorator}
+          decorator={strikeThroughDecorator}
           pair={{char: '~', amount: 2}}
         />
       ) : null}

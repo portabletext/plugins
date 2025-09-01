@@ -1,5 +1,11 @@
 # Changelog
 
+## 1.1.0
+
+### Minor Changes
+
+- [`909b379`](https://github.com/portabletext/plugins/commit/909b379df26d9c0dfc59dc9ede21e80a163f0a03) Thanks [@stipsan](https://github.com/stipsan)! - add react compiler
+
 ## 1.0.17
 
 ### Patch Changes

@@ -182,9 +182,6 @@ importers:
       '@sanity/json-match':
         specifier: ^1.0.5
         version: 1.0.5
-      react-compiler-runtime:
-        specifier: 19.1.0-rc.2
-        version: 19.1.0-rc.2(react@19.1.0)
     devDependencies:
       '@portabletext/editor':
         specifier: ^2.4.1

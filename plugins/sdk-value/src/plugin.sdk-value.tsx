@@ -151,7 +151,7 @@ export function SDKValuePlugin(props: SDKValuePluginProps) {
       unsubscribeToEditorChanges()
       unsubscribeToSdkChanges()
     }
-  }, [setSdkValue, editor, instance, props])
+  }, [editor, instance, props, setSdkValue])
 
   return null
 }

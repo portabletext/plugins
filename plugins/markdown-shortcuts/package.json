@@ -51,9 +51,9 @@
   },
   "devDependencies": {
     "@portabletext/editor": "^2.6.9",
-    "@types/react": "^19.1.2",
+    "@types/react": "^19.1.12",
     "babel-plugin-react-compiler": "19.1.0-rc.3",
-    "react": "^19.1.0"
+    "react": "^19.1.1"
   },
   "peerDependencies": {
     "@portabletext/editor": "^2.6.9",

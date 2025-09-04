@@ -38,7 +38,7 @@
     "@ianvs/prettier-plugin-sort-imports": "^4.7.0",
     "@playwright/test": "^1.55.0",
     "@sanity/browserslist-config": "^1.0.5",
-    "@sanity/pkg-utils": "^8.1.4",
+    "@sanity/pkg-utils": "^8.1.5",
     "@sanity/prettier-config": "^1.0.6",
     "@vitest/browser": "^3.2.4",
     "del-cli": "^6.0.0",

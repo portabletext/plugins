@@ -15,7 +15,7 @@
     "preview": "vite preview"
   },
   "dependencies": {
-    "@portabletext/editor": "^2.6.9",
+    "@portabletext/editor": "^2.8.2",
     "@portabletext/plugin-character-pair-decorator": "workspace:^",
     "@portabletext/plugin-markdown-shortcuts": "workspace:^",
     "@portabletext/plugin-one-line": "workspace:^",

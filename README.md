@@ -1,3 +1,6 @@
+> [!NOTE]
+> This repository has been archived. The plugins now live in https://github.com/portabletext/editor.
+
 # Portable Text Editor Plugins
 
 > Official Plugins for the [Portable Text Editor](https://github.com/portabletext/editor)

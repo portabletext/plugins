@@ -202,8 +202,8 @@ importers:
         specifier: ^4.6.0
         version: 4.6.0(@types/react@19.1.12)
       '@sanity/sdk-react':
-        specifier: ^2.1.2
-        version: 2.1.2(@types/react@19.1.12)(immer@10.1.1)(react-dom@19.1.1(react@19.1.1))(react@19.1.1)(use-sync-external-store@1.5.0(react@19.1.1))
+        specifier: ^2.2.0
+        version: 2.2.0(@types/react@19.1.12)(immer@10.1.1)(react-dom@19.1.1(react@19.1.1))(react@19.1.1)(use-sync-external-store@1.5.0(react@19.1.1))
       '@sanity/types':
         specifier: ^4.6.0
         version: 4.6.0(@types/react@19.1.12)
@@ -1388,15 +1388,15 @@ packages:
   '@sanity/schema@4.6.0':
     resolution: {integrity: sha512-EkCMecou56j9DfvbAqCuwTHy6nszuLkmDYXxMHELgfNbopxWZzQU/KdvP54RVn/iVwOTlYykgFns90l/oicpug==}
 
-  '@sanity/sdk-react@2.1.2':
-    resolution: {integrity: sha512-Q1O4M6YICNbwB/HoU9DjvgBeUYwN5S0JBM/+eiIfJwaHod0/ShjA8xL9fLlMUxaMDSMXuJIP5Jvd72uBUhB3hA==}
+  '@sanity/sdk-react@2.2.0':
+    resolution: {integrity: sha512-vZoqwZzSJgZ00TBeiLReWk/fhQwwEJGJCzQMlerAo+0EpxDPVurtdB83zchZpWEK+l9l86eBy8O+CCanITlQKQ==}
     engines: {node: '>=20.0.0'}
     peerDependencies:
       react: ^18.0.0 || ^19.0.0
       react-dom: ^18.0.0 || ^19.0.0
 
-  '@sanity/sdk@2.1.2':
-    resolution: {integrity: sha512-gRBMDNvMUqlFTVoNgOLtcOFDO+e8Fh6v+BrEA4C5F18oi949ObjMmPB2aZMoyP3N3GQuqwVQP6L2PrhH70H7Bw==}
+  '@sanity/sdk@2.2.0':
+    resolution: {integrity: sha512-JyUv8W1lTXHsaQY06LDJNKloVlRAWQsY3BgvzDNFXs9gvIU2KBrfB7IRLmRlxwMMZfYQhKKjpjRYn/DD5adzIg==}
     engines: {node: '>=20.0.0'}
 
   '@sanity/types@3.96.0':
@@ -5203,11 +5203,11 @@ snapshots:
       - debug
       - supports-color
 
-  '@sanity/sdk-react@2.1.2(@types/react@19.1.12)(immer@10.1.1)(react-dom@19.1.1(react@19.1.1))(react@19.1.1)(use-sync-external-store@1.5.0(react@19.1.1))':
+  '@sanity/sdk-react@2.2.0(@types/react@19.1.12)(immer@10.1.1)(react-dom@19.1.1(react@19.1.1))(react@19.1.1)(use-sync-external-store@1.5.0(react@19.1.1))':
     dependencies:
       '@sanity/client': 7.10.0
       '@sanity/message-protocol': 0.12.0
-      '@sanity/sdk': 2.1.2(@types/react@19.1.12)(immer@10.1.1)(react@19.1.1)(use-sync-external-store@1.5.0(react@19.1.1))
+      '@sanity/sdk': 2.2.0(@types/react@19.1.12)(immer@10.1.1)(react@19.1.1)(use-sync-external-store@1.5.0(react@19.1.1))
       '@sanity/types': 3.96.0(@types/react@19.1.12)
       '@types/lodash-es': 4.17.12
       groq: 3.88.1-typegen-experimental.0
@@ -5223,7 +5223,7 @@ snapshots:
       - immer
       - use-sync-external-store
 
-  '@sanity/sdk@2.1.2(@types/react@19.1.12)(immer@10.1.1)(react@19.1.1)(use-sync-external-store@1.5.0(react@19.1.1))':
+  '@sanity/sdk@2.2.0(@types/react@19.1.12)(immer@10.1.1)(react@19.1.1)(use-sync-external-store@1.5.0(react@19.1.1))':
     dependencies:
       '@sanity/bifur-client': 0.4.1
       '@sanity/client': 7.10.0
